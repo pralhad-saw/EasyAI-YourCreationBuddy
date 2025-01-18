@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyAI - Your Creation Buddy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>EasyAI</h1>
+            <p>Your Creation Buddy</p>
+            <button id="getStartedBtn">Get Started</button>
+        </div>
+    </header>
+    <section id="main-features">
+        <div class="feature-card" id="imageGenerator">
+            <h3>Image Generator</h3>
+            <p>Create stunning images with just a few words. Let SaralAI turn your ideas into art!</p>
+            <button class="feature-btn">Create an Image</button>
+        </div>
+        
+        <div class="feature-card" id="codeGenerator">
+            <h3>Code Generator</h3>
+            <p>Generate code snippets for your projects instantly. Let AI help you with coding challenges.</p>
+            <button class="feature-btn">Generate Code</button>
+        </div>
+
+        <div class="feature-card" id="ChatBOT">
+            <h3>ChatBOT</h3>
+            <p>Generate meaningful responses for your problem instantly. Let AI help your all query.</p>
+            <button class="feature-btn"><a href="ChatBOT.html" target="_blank">Generate Code</a></button>
+        </div>
+
+        <div class="feature-card" id="textSummarizer">
+            <h3>Text Summarizer</h3>
+            <p>Summarize long articles, essays, or documents in seconds with SaralAI.</p>
+            <button class="feature-btn">Summarize Text</button>
+        </div>
+
+        <div class="feature-card" id="topicExplainer">
+            <h3>Topic Explainer</h3>
+            <p>Learn about any topic with a simple and concise explanation from SaralAI.</p>
+            <button class="feature-btn">Explain a Topic</button>
+        </div>
+    </section>
+<section id="image-generator-section" class="tool-section" style="display:none;">
+    <h2>Image Generator</h2>
+    <input type="text" id="image-description" placeholder="Describe the image you want...">
+    <button onclick="generate_Image()">Generate Image</button>
+    <div id="generated-image"> <img id="latest-generated-image" src="" alt=""> </div>
+</section>
+
+<section id="code-generator-section" class="tool-section" style="display:none;">
+    <h2>Code Generator</h2>
+    <textarea id="code-description" placeholder="Describe the code you need..."></textarea>
+    <button onclick="generate_Code()">Generate Code</button>
+    <pre id="generated-code"></pre>
+</section>
+
+<section id="text-summarizer-section" class="tool-section" style="display:none;">
+    <h2>Text Summarizer</h2>
+    <textarea id="text-to-summarize" placeholder="Paste the text to summarize..."></textarea>
+    <button onclick="summarize_Text()">Summarize</button>
+    <p id="summarized-text"></p>
+</section>
+
+<section id="topic-explainer-section" class="tool-section" style="display:none;">
+    <h2>Topic Explainer</h2>
+    <input type="text" id="topic-description" placeholder="Enter the topic you want explained...">
+    <button onclick="explain_Topic()">Explain</button>
+    <p id="explanation-text"></p>
+</section>
+    <footer>
+        <p>&copy; 2025 EasyAI. All rights reserved.</p>
+        Contact Owner Of Project For Any Sponsorship
+            Owners- PRALHAD With VANSH  
+        <p>         
+        </p>
+    </footer>    <!-- Link to External JS (for interactive behavior) -->
+<script src="script.js"></script>    <!-- Link to External JS (main script) -->
+<script src="openaiintegration.js"></script><!-- Link to OpenAI Integration JS -->
+</body>
+</html>
+<!-- 
+Key Elements:
+Hero Section: This includes the main title of your project ("SaralAI") and a brief tagline, along with a "Get Started" button.
+Main Features Section: Contains the four options for:
+Image Generator
+Code Generator
+Text Summarizer
+Topic Explainer Each card has a heading, description, and a button for interaction.
+Step 2: Add Basic Interactivity with JavaScript
+Now that we have the basic HTML structure, let's add interactivity. We’ll handle the click events for the buttons that will open the respective features.
+Create a script.js file to handle these interactions:
+javascript -->
