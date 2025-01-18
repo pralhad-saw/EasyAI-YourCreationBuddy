@@ -1,0 +1,68 @@
+/* created by me */
+
+
+body 
+{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #34495e;
+            background: url(https://static.statusqueen.in/mobilewallpaper/thumbnail/mobile_wallpaper__1-471.jpg) no-repeat; 
+            background-size: cover;
+        }
+.box
+ {
+            width: 300px;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+           /* background-color: #191919;*/
+            text-align: center;
+        }
+ .box h1 
+ {
+            color: white;
+            text-transform: none;
+            font-weight: 200;
+        }   
+  .box input[type="text"],
+  .box input[type="password"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            border-radius: 24px;
+            color: black;
+            transition: 0.25s;
+        }
+  .box input[type="text"]:focus,
+  .box input[type="password"]:focus {
+            width: 280px;
+            border-color: #2ecc71;
+        }
+        .box input[type="submit"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 50px;
+            width: 136px;
+            outline: none;
+            border-radius: 24px;
+            color:#000000;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        .box input[type="submit"]:hover {
+            background-color:rgb(5, 5, 5);
+            color: white;
+        }        
